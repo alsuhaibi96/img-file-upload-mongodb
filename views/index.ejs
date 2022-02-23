@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+
+
+    <form action="/add_user" method="post" enctype="multipart/form-data" class="m-auto col-6">
+
+      <div class="mt-3">
+        <label class="form-label" for="profile_picture-input"
+          >Profile picture </label
+        >
+
+        <input
+          class="form-control"
+          required
+          type="file"
+          name="profile_picture"
+          id="profile_picture-input"
+        />
+      </div>
+      <div class="mt-3">
+        <label class="form-label" for="full_name-input"> Full name  </label>
+        <input
+          class="form-control"
+          required
+          type="text"
+          name="full_name"
+          id="full_name-input"
+        />
+      </div>
+
+      <div class="mt-3">
+        <label class="form-label" for="username-input">Username </label>
+        <input
+          required
+          class="form-control"
+          type="text"
+          name="username"
+          id="username-input"
+        />
+      </div>
+
+      <div class="mt-3">
+        <label class="form-label" for="email-input">Email </label>
+        <input
+          required
+          class="form-control"
+          type="email"
+          name="email"
+          id="email-input"
+        />
+      </div>
+
+
+
+      <div class="mt-3">
+        <label class="form-label" for="cv_file-input">CV </label>
+        <input
+          required
+          class="form-control"
+          type="file"
+          name="cv_file"
+          id="cv_file-input"
+        />
+      </div>
+
+      <div class="mt-4">
+        <button class="btn btn-primary d-block w-100" type="submit">Send</button>
+      </div>
+    </div>
+  </form>
+  </body>
+</html>
